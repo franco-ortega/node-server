@@ -14,13 +14,17 @@ app.get('/', (req, res) => {
         },
         {
             name: 'ilan'
+        },
+        {
+            name: 'fourth name'
         }
+
     ]);
 
 });
 
 app.get('/stuff', (req, res) => {
-    console.log('console log test')
+    console.log('console stuff test')
     const stuff = [
         {
             name: 'skateboard'
@@ -30,10 +34,19 @@ app.get('/stuff', (req, res) => {
         },
         {
             name: 'kite'
+        },
+        {
+            name: 'fourth stuff'
         }
+
     ];
 
-    // res.json(stuff);
+    res.json(stuff);    
+});
+
+
+app.get('/blue', (req, res) => {
+    console.log('console blue test')
 
     res.send(`<!DOCTYPE>
     <html>
@@ -47,6 +60,7 @@ app.get('/stuff', (req, res) => {
 
     
 });
+
 
 
 
