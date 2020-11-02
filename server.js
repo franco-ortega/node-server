@@ -16,8 +16,19 @@ app.get('/', (req, res) => {
             name: 'ilan'
         }
     ]);
-});
 
+
+res.send(`<!DOCTYPE>
+    <html>
+        <head>
+        </head>
+        <body>
+            <h1 style="color:blue">I'm bluuuuuuue!!!!</h1>
+        </body>
+    </html>
+`);
+
+});
 
 app.get('/stuff', (req, res) => {
     console.log('console log test')
